@@ -6,3 +6,17 @@ $wemanity_red        : #862633;
 $wemanity_grey       : #E6ECF1;
 $wemanity_white-dark : #F5F5F5;
 $wemanity_white      : #FFFFFF;
+
+//Sass
+$width-phone-max: 420px;   // Width of the biggest phones
+
+$page-padding: 15px;
+
+$section-padding     : 10px;
+$section-title-height: 35px;
+
+     // Big screens
+$breakpoint-two-sections: 2*$width-phone-max + 3*$page-padding;
+     // Tablets in portrait mode
+$breakpoint-one-sections: 1*$width-phone-max + 0*$page-padding;
+     // Under the width of the biggest phones

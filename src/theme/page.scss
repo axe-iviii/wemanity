@@ -1,0 +1,57 @@
+// Global CSS classes for pages
+@import "./variables.scss";
+
+
+.wemanity_page {
+	display        : flex;
+	justify-content: center;
+	align-content  : stretch;
+	flex-wrap: wrap;
+	&.dark {
+		background-color: $wemanity_black;
+	}
+	&.light {
+		background-color: $wemanity_white-dark;
+	}
+}
+
+.wemanity_page-section {
+	flex-grow: 1;
+	position: relative;
+	min-height: 250px + $section-title-height + 2*$section-padding;
+	background: pink;
+}
+
+
+@media (min-width: $breakpoint-two-sections + 1px) {
+  .wemanity_page {
+    padding: $page-padding/2;
+  }
+	.wemanity_page-section {
+		width : 48%;   // Not the cleanest way but working for that the rush of the 4 hours
+		margin: $page-padding/2;
+	}
+}
+
+@media (min-width: $breakpoint-one-sections + 1px) and (max-width: $breakpoint-two-sections) {
+  .wemanity_page {
+    padding: $page-padding/2;
+  }
+	.wemanity_page-section {
+		width : $width-phone-max;
+		margin: $page-padding/2;
+	}
+}
+
+@media (max-width: $breakpoint-one-sections) {
+  .wemanity_page {
+    padding: 0;
+  }
+	.wemanity_page-section {
+		width : $width-phone-max;
+		margin-bottom: $page-padding;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
