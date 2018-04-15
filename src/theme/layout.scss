@@ -1,0 +1,13 @@
+@import "./variables.scss";
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $wemanity_black-light;   // Color "behind" the website
+  // overflow: hidden;                       // To disable the bounce effect on Safari
+}
+
+* {
+	box-sizing: border-box;
+}

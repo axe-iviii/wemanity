@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  font-weight: 200;
+  src : url('../fonts/AvenirNextCondensed-UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  font-weight: 400;
+  src: url('../fonts/AvenirNextCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  font-weight: 500;
+  src: url('../fonts/AvenirNextCondensed-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  font-weight: 600;
+  src: url('../fonts/AvenirNextCondensed-DemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  font-weight: 700;
+  src: url('../fonts/AvenirNextCondensed-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  font-weight: 800;
+  src: url('../fonts/AvenirNextCondensed-Heavy.ttf') format('truetype');
+}
