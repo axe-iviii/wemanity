@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+//Services
+import { ThemeService } from '../services/theme.service';
 
 
 @Component({
@@ -10,6 +12,16 @@ import { Component } from '@angular/core';
 
 export class AppRoot {
 
-  constructor() {}
+  constructor(
+    private _themeService: ThemeService
+  ) {}
+
+  //------------------------------------------------------------------------//
+  //-------------------------------- THEME ---------------------------------//
+  //------------------------------------------------------------------------//
+
+  displayTheme() {
+    return this._themeService.getTheme();
+  }
 
 }

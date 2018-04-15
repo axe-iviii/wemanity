@@ -1,0 +1,39 @@
+// Global CSS classes for sections
+@import "./variables.scss";
+
+
+.wemanity_section {
+  display       : flex;
+  flex-direction: column;
+  position: relative;
+  width : 100%;
+  height: 100%;
+  &.dark {
+    background-color: $wemanity_black-light;
+  }
+  &.light {
+    background-color: $wemanity_white;
+  }
+}
+
+.wemanity_section-title {
+  position: relative;
+  width : 100%;
+  height: $section-title-height;
+  text-align : center;
+  line-height: $section-title-height;
+  &.dark {
+    color: $wemanity_grey;
+  }
+  &.light {
+    color: $wemanity_blue;
+  }
+}
+
+.wemanity_section-content {
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  padding-left : $section-padding;
+  padding-right: $section-padding;
+}

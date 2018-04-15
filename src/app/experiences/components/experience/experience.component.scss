@@ -1,0 +1,23 @@
+@import "../../../../theme/variables.scss";
+
+
+.experience-component {
+  position: relative;
+  width: 100%;
+  margin-bottom: $section-padding;
+  padding: 10px;
+  background-color: $wemanity_grey;
+}
+
+.experience-component-title {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.experience-component-subtitle {
+  position: relative;
+}
+
+.experience-component-text {
+  position: relative;
+}

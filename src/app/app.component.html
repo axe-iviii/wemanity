@@ -1,10 +1,11 @@
-<div id="app-component" class="wemanity_page">
+<div id="app-component" class="wemanity_page" [class.dark]='displayTheme()' [class.light]='!displayTheme()'>
   <!-- Trips -->
   <div class="wemanity_page-section">
   </div>
 
   <!-- Experiences -->
   <div class="wemanity_page-section">
+    <experiences-component></experiences-component>
   </div>
 
   <!-- Skills -->

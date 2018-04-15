@@ -1,6 +1,74 @@
 @import "./variables.scss";
 
 
+// Page title
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+// Section title
+h2 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family   : Avenir Next Condensed;
+	font-size     : 20px;
+	font-weight   : 400;
+}
+
+// Item title
+h3 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family   : Avenir Next Condensed;
+	font-size     : 16px;
+	font-weight   : 400;
+}
+
+// Item subtitle
+h4 {
+	margin: 0;
+	padding: 0;
+	font-family   : Avenir Next Condensed;
+	font-size     : 16px;
+	font-weight   : 400;
+}
+
+// Item text
+h5 {
+	margin: 0;
+	padding: 0;
+	font-family   : Avenir Next Condensed;
+	font-size     : 14px;
+	font-weight   : 400;
+}
+
+// Secondary infos
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+// Main text
+p {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	outline: none;
+	cursor: pointer;
+	&:active {
+		background: $wemanity_grey !important;
+	}
+}
+
 body {
   margin: 0;
   padding: 0;

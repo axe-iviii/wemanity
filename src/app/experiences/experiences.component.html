@@ -1,0 +1,11 @@
+<div id="experiences-component" class="wemanity_section" [class.dark]='displayTheme()' [class.light]='!displayTheme()'>
+  <!-- Title -->
+  <div class="wemanity_section-title" [class.dark]='displayTheme()' [class.light]='!displayTheme()'>
+    <h2>{{displayText().EXPERIENCES_TITLE}}</h2>
+  </div>
+
+  <!-- Experiences -->
+  <div class="wemanity_section-content">
+    <experience-component [experience]='experience' *ngFor='let experience of experiences'></experience-component>
+  </div>
+</div>
