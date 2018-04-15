@@ -14,3 +14,12 @@
 .hidden {
   display: none;
 }
+
+//Lealfet - Has to be here to work
+.leaflet-city {
+  stroke: $wemanity_red !important;
+  fill  : $wemanity_red !important;
+}
+.leaflet-control-attribution.leaflet-control {
+  display: none !important;   // To remove the credits
+}
