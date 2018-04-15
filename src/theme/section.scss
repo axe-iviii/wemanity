@@ -36,4 +36,9 @@
   width: 100%;
   padding-left : $section-padding;
   padding-right: $section-padding;
+  &.flex {
+    display        : flex;
+    justify-content: space-evenly;
+    align-items    : center;
+  }
 }

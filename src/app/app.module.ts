@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoot       } from './app.component';
 //Modules
 import { ExperiencesModule } from './experiences/experiences.module';
+import { SkillsModule      } from './skills/skills.module';
 import { TripsModule       } from './trips/trips.module';
 //Services
 import { DataService    } from '../services/data.service';
@@ -18,6 +19,7 @@ import { ThemeService   } from '../services/theme.service';
   imports: [
     //Feature modules
     ExperiencesModule,
+    SkillsModule,
     TripsModule,
     //Angular modules
     BrowserModule

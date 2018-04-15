@@ -1,0 +1,11 @@
+<div id="skills-component" class="wemanity_section" [class.dark]='displayTheme()' [class.light]='!displayTheme()'>
+  <!-- Title -->
+  <div class="wemanity_section-title" [class.dark]='displayTheme()' [class.light]='!displayTheme()'>
+    <h2>{{displayText().SKILLS_TITLE}}</h2>
+  </div>
+
+  <!-- Graphs -->
+  <div class="wemanity_section-content flex">
+    <graph-component [data]='skills' [class.dark]='displayTheme()' [class.light]='!displayTheme()'></graph-component>
+  </div>
+</div>

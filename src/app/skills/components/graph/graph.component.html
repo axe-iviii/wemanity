@@ -1,0 +1,14 @@
+<div class="graph-component">
+  <!-- Circle -->
+  <svg class="graph-component-circle" viewBox="-10 -10 320 320">
+    <path [class.hover]='hover==data.indexOf(item)' fill="transparent" stroke-width="8" [attr.d]="item.path" (mouseover)='hover=data.indexOf(item)' (mouseleave)='hover=-1' *ngFor='let item of data'/>
+  </svg>
+
+  <!-- Names -->
+  <div class="graph-component-names">
+    <div class="names-name" [class.hover]='hover==data.indexOf(item)' (mouseover)='hover=data.indexOf(item)' (mouseleave)='hover=-1' *ngFor='let item of data'>
+      <div class="name-color"></div>
+      <h4 class="name-text">{{item.name}}</h4>
+    </div>
+  </div>
+</div>

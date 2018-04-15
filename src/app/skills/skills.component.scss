@@ -1,0 +1,13 @@
+@import "../../theme/variables.scss";
+
+
+#skills-component {}
+
+graph-component {
+  &.dark {
+    color: $wemanity_white;
+  }
+  &.light {
+    color: $wemanity_black;
+  }
+}
