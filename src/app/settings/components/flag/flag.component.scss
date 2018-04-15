@@ -1,0 +1,32 @@
+@import "../../../../theme/variables.scss";
+
+
+$circle-diameter: 100px;
+$flag-width     : 40px;
+
+
+.flag-component {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  position: relative;
+  width : $circle-diameter;
+  height: $circle-diameter;
+  border-radius: 100%;
+  background-color: transparent;
+  &:hover {
+    background-color: $wemanity_grey;
+    transition: background-color 0.3s ease-out;
+  }
+  &.selected {
+    background-color: $wemanity_grey;
+  }
+}
+
+.flag-component-flag {
+  img {
+    width : $flag-width;
+    height: auto;
+    border-radius: 2px;
+  }
+}

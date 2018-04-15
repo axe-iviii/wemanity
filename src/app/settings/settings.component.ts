@@ -1,34 +1,26 @@
 import { Component } from '@angular/core';
-//Classes
-import { Experience } from '../../classes/experience';
 //Services
 import { LocaleService } from '../../services/locale.service';
 import { ThemeService  } from '../../services/theme.service';
 
 
 @Component({
-  selector   : 'experiences-component',
-  templateUrl: './experiences.component.html',
-  styleUrls  : ['./experiences.component.scss']
+  selector   : 'settings-component',
+  templateUrl: './settings.component.html',
+  styleUrls  : ['./settings.component.scss']
 })
 
 
-export class ExperiencesComponent {
+export class SettingsComponent {
 
-  public experiences: Experience[];
+  public locales: string[];
 
   constructor(
     private _localeService: LocaleService,
     private _themeService : ThemeService
-  ) {}
-
-  ngDoCheck() {
-    this.experiences = [   // TODO: Put in the folder data
-      {id: 1, title: this.displayText().EXPERIENCES_ITEM_1_TITLE, subtitle: this.displayText().EXPERIENCES_ITEM_1_SUBTITLE, text: this.displayText().EXPERIENCES_ITEM_1_TEXT},
-      {id: 2, title: this.displayText().EXPERIENCES_ITEM_2_TITLE, subtitle: this.displayText().EXPERIENCES_ITEM_2_SUBTITLE, text: this.displayText().EXPERIENCES_ITEM_2_TEXT},
-      {id: 3, title: this.displayText().EXPERIENCES_ITEM_3_TITLE, subtitle: this.displayText().EXPERIENCES_ITEM_3_SUBTITLE, text: this.displayText().EXPERIENCES_ITEM_3_TEXT}
-    ];
-  }
+  ) {
+      this.locales = ["FR", "IT", "EN"];   // TODO: Put in the folder data
+    }
 
   //------------------------------------------------------------------------//
   //------------------------------- LOCALE ---------------------------------//

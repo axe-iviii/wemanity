@@ -17,8 +17,7 @@ import { ExperienceComponent  } from './components/experience/experience.compone
   ],
   providers: [],
   exports: [
-    ExperiencesComponent,
-    ExperienceComponent
+    ExperiencesComponent
   ]
 })
 

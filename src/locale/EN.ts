@@ -13,9 +13,6 @@ export const TEXTS_EN = {
   EXPERIENCES_ITEM_3_TITLE   : "Vice President",
   EXPERIENCES_ITEM_3_SUBTITLE: "2013 - 2014 · Students’ Office · Paris",
   EXPERIENCES_ITEM_3_TEXT    : "Team of 35 members from two different schools",
-  EXPERIENCES_ITEM_4_TITLE   : "Video Editing",
-  EXPERIENCES_ITEM_4_SUBTITLE: "2013 · Air France · Roissy CDG",
-  EXPERIENCES_ITEM_4_TEXT    : "Traineeship : Olivier Lange",
   //Skills
   SKILLS_TITLE: "Skills",
   SKILLS_SKILL_1_NAME: "Skill 1",

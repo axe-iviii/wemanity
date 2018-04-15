@@ -1,0 +1,16 @@
+<div id="settings-component" class="wemanity_section" [class.dark]='displayTheme()' [class.light]='!displayTheme()'>
+  <!-- Title -->
+  <div class="wemanity_section-title" [class.dark]='displayTheme()' [class.light]='!displayTheme()'>
+    <h2>{{displayText().SETTINGS_TITLE}}</h2>
+  </div>
+
+  <!-- Languages -->
+  <div class="wemanity_section-content flex">
+    <flag-component [locale]='locale' *ngFor='let locale of locales'></flag-component>
+  </div>
+
+  <!-- Bulb -->
+  <div class="wemanity_section-content flex">
+    <bulb-component></bulb-component>
+  </div>
+</div>

@@ -17,8 +17,7 @@ import { GraphComponent  } from './components/graph/graph.component';
   ],
   providers: [],
   exports: [
-    SkillsComponent,
-    GraphComponent
+    SkillsComponent
   ]
 })
 

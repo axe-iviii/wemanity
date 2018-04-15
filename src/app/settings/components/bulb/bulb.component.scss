@@ -1,0 +1,96 @@
+@import "../../../../theme/variables.scss";
+
+
+$circle-diameter: 100px;
+$flower-size    : 70px;
+
+
+.bulb-component {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  position: relative;
+  width : $circle-diameter;
+  height: $circle-diameter;
+  border-radius: 100%;
+  transition: background-color 1s ease-out;
+  &.dark {
+    background-color: $wemanity_white;
+  }
+  &.light {
+    background-color: $wemanity_black;
+  }
+  &:hover {
+    .icon-flower {
+      .flower-center {
+        width : 50%;
+        height: 50%;
+      }
+      .flower-petal {
+        &.top {
+          width : 50%;
+          height: 50%;
+        }
+        &.right {
+          width : 50%;
+          height: 50%;
+        }
+        &.bottom {
+          width : 50%;
+          height: 50%;
+        }
+        &.left {
+          width : 50%;
+          height: 50%;
+        }
+      }
+    }
+  }
+}
+
+.icon-flower {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  position: relative;
+  width : $flower-size;
+  height: $flower-size;
+  border-radius: 100%;
+  .flower-center {
+    position: absolute;
+    width : 40%;
+    height: 40%;
+    border-radius: 100%;
+    background-color: rgba(204, 121, 197, 0.8 );
+    opacity         : 0.5;
+    transition: all 0.25s ease-out;
+  }
+  .flower-petal {
+    position: absolute;
+    width : 40%;
+    height: 40%;
+    border-radius: 0 100% 140% 100%;
+    background-color: rgba(139, 114, 213, 0.8 );
+    opacity         : 0.5;
+    &.top {
+      transform: rotate(45deg);
+      margin-top: -20%;
+      transition: all 0.2s 0.0s ease-out;
+    }
+    &.left {
+      transform: rotate(-45deg);
+      margin-left: -20%;
+      transition: all 0.2s 0.15s ease-out;
+    }
+    &.right {
+      transform: rotate(135deg);
+      margin-left: 20%;
+      transition: all 0.2s 0.05s ease-out;
+    }
+    &.bottom {
+      transform: rotate(-135deg);
+      margin-top: 20%;
+      transition: all 0.2s 0.1s ease-out;
+    }
+  }
+}
